@@ -1,0 +1,14 @@
+model_version: "78"
+build:
+  gpu: true
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.8"
+  python_packages:
+    - "numpy==1.20.0"
+    - "tensorflow==2.10.0"
+predict: "predict.py:EmotionPredictor"
+model_name: "emotion-predictor"
+private: false
+iteration: "objects"
